@@ -1,124 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRS Result</title>
+    <title>Halaman HTML Erlina</title>
+    <link rel="icon" type="image/png" href="html_dasar/gambar/icon.png" sizes="16x16" />
+    <title>KRS PNM</title>
     <style>
-        table, th, td {
-            border: 1px solid black;
+        body {
+            font-family: arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+        .logo {
+            float: left; 
+            margin-right: 20px; 
+            width: 120px; 
+            height: auto;
+        }
+        .letter {
+            flex-grow: 1;
+            text-align: center; 
+            font-size: 18px;
+            text-align: center;
+        }
+        table.nama {
+            font-family: 'Bahnschrift', sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+            border: none;
+        }      
+        table.nama th,
+        table.nama td {
+            padding: 8px;
+            text-align: left;
+            line-height: 0.3;
+            font-size: 12px;
+        }
+        table.krs {
+            width: 100%;
             border-collapse: collapse;
         }
-        th, td {
-            padding: 5px;
+        table.krs th,
+        table.krs td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            font-family: 'Bahnschrift', sans-serif;
+            line-height: 0.5;
+            font-size: 12px;
+        }
+        table.krs td.left-align {
             text-align: left;
+        }
+        table.krs td.center-align {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1><div style="text-align: center;">KARTU RENCANA STUDI (KRS)</div></h1>
-    <h2><div style="text-align: center;">SEMESTER GENAP</div></h2>
-    <h2><div style="text-align: center;">TAHUN AKADEMIK 2022/2023</div></h2>
-
-    <p><h4>Nama Mahasiswa: Muhammad Daffa Samudra</h4></p>
-    <p><h4>NIM: 233307054</h4></p>
-    <p><h4>Jurusan: Teknik Informatika</h4></p>
-    <p><h4>Program Studi: Teknologi Informasi</h4></p>  
-
-    <h4>Mata Kuliah yang Ditempuh:</h4>
-
-    <table style="margin: 0 auto;" width="100%">
+    <div class="letter">
+        <header>
+        <img src="gambar/icon.png" alt="Logo Universitas" class="logo">
+        <div style="text-align: center;">
+            <p style="font-size: 20px; margin: 0; padding: 0;"> 
+            <b>KEMENTERIAN PENDIDIKAN, KEBUDAYAAN<br>
+                RISET, DAN TEKNOLOGI <br>
+                POLITEKNIK NEGERI MADIUN</b>
+            </p>
+            <p style="font-size: 12px; margin: 0; padding: 0;">
+                Jalan Serayu Nomor 84 Madiun Kode Pos 63133 <br>
+                Telepon +62 351 452970 Faksmile +62 351 452960 <br>
+                Laman: www.pnm.ac.id Surel: sekretariat@pnm.ac.id
+            </p>
+        </div>
+        </header>
+        <hr>
+        <div style="text-align: center;">
+            <b>KARTU RENCANA STUDI (KRS)<br>
+            SEMESTER GENAP<br>
+            TAHUN AKADEMIK 2023/2024</b>
+        </div>
+        <table class="nama">
+            <tr>
+                <th>Nama Mahasiswa </th>
+                <td>: Muhammad Daffa Samudra</td>
+                <th>Jurusan</th>
+                <td>: Teknik</td>
+            </tr>
+            <tr>
+               <th>NIM</th>
+                <td>: 233307054</td>
+                <th>Program Studi</th>
+                <td>: Teknologi Informasi</td>
+            </tr><br>
+            <tr>
+                <td>
+                    <b>Mata Kuliah yang ditempuh :</b>
+                </td>    
+            </tr>
+        </table> <br>
+        <table class="krs" style="margin-bottom: 10px;">
+            <tr>
+                <th>No</th>
+                <th>Kode MK</th>
+                <th>Mata Kuliah</th>
+                <th>SKS</th>
+                <th>Kelas</th>
+                <th>Dosen Pengampu</th>
+            </tr>
         <tr>
-            <th>No</th>
-            <th>Kode MK</th>
-            <th>Mata Kuliah</th>
-            <th>SKS</th>
-            <th>Kelas</th>
-            <th>Dosen Pengampu</th>
+            <td class="center-align">1</td>
+            <td class="center-align">MKU2201</td>
+            <td class="left-align">Agama Islam</td>
+            <td class="center-align">2</td>
+            <td class="center-align">2B</td>
+            <td class="left-align">Dr. Nanik Nurhayati, S.Ag., M.Pd.</td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>MKU2201</td>
-            <td>Agama Islam</td>
-            <td>2</td>
-            <td>2B</td>
-            <td>Dr. Nanik Nurhayati, S.Ag. M.Pd</td>
+            <td class="center-align">2</td>
+            <td class="center-align">TI22202</td>
+            <td class="left-align">Pemrograman Mobile 1</td>
+            <td class="center-align">2</td>
+            <td class="center-align">2B</td>
+            <td class="left-align">Angger Binuko Paksi, M.Kom.</td>
         </tr>
         <tr>
-            <td>2</td>
-            <td>T122202</td>
-            <td>Pemrograman Mobile 1</td>
-            <td>2</td>
-            <td>2B</td>
-            <td>Sigit Kariagil Bimonugroho, S.Kom., M.T.</td>
+            <td class="center-align">3</td>
+            <td class="center-align">TI22203</td>
+            <td class="left-align">Praktik Pemrograman Mobile 1</td>
+            <td class="center-align">2</td>
+            <td class="center-align">2B</td>
+            <td class="left-align">Angger Binuko Paksi, M.Kom.</td>
         </tr>
         <tr>
-            <td>3</td>
-            <td>T122203</td>
-            <td>Praktik Pemrograman Mobile 1</td>
-            <td>2</td>
-            <td>2B</td>
-            <td>Sigit Kariagil Bimanugroho, S. Kom., M.T.</td>
+            <td class="center-align">4</td>
+            <td class="center-align">TI22204</td>
+            <td class="left-align">Manajemen Resiko Proyek</td>
+            <td class="center-align">2</td>
+            <td class="center-align">2B</td>
+            <td class="left-align">Nisa'ul Hafidhoh, M.T.</td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>T122204</td>
-            <td>Manajemen Resiko Proyek</td>
-            <td>2</td>
-            <td>2B</td>
-            <td>Lutfiyah Dai Setia, S.Kom., M. Kom.</td>
+            <td class="center-align">5</td>
+            <td class="center-align">TI22205</td>
+            <td class="left-align">Pemrograman Berbasis Obyek</td>
+            <td class="center-align">2</td>
+            <td class="center-align">2B</td>
+            <td class="left-align">Tri Lestariningsih, S.Kom., M.Kom.</td>
         </tr>
         <tr>
-            <td>5</td>
-            <td>T122205</td>
-            <td>Pemrograman Berbasis Obyek</td>
-            <td>2</td>
-            <td>2B</td>
-            <td>Ikhwan Baidlowi Sumafta, S. Kom, M.Kom.</td>
+            <td class="center-align">6</td>
+            <td class="center-align">TI22206</td>
+            <td class="left-align">Praktik Pemrograman Berbasis Obyek</td>
+            <td class="center-align">2</td>
+            <td class="center-align">2B</td>
+            <td class="left-align">Tri Lestariningsih, S.Kom., M.Kom.</td>
         </tr>
         <tr>
-            <td>6</td>
-            <td>T122206</td>
-            <td>Praktik Pemrograman Berbasis Obyek</td>
-            <td>2</td>
-            <td>28</td>
-            <td>Ikhwan Baidlowi Sumafta, S.Kom, M.Kom.</td>
+            <td class="center-align">7</td>
+            <td class="center-align">TI22207</td>
+            <td class="left-align">Desain & Pemrograman Web</td>
+            <td class="center-align">2</td>
+            <td class="center-align">2B</td>
+            <td class="left-align">Gus Nanang SyaifuddIin, S.Kom., M.Kom.</td>
         </tr>
         <tr>
-            <td>7</td>
-            <td>T122207</td>
-            <td>Desain & Pemrograman Web</td>
-            <td>2</td>
-            <td>2B</td>
-            <td>Ardian Prima Atmaja, S.Kom, M.Cs.</td>
+            <td class="center-align">8</td>
+            <td class="center-align">TI22208</td>
+            <td class="left-align">Praktik Desain & Pemrograman Web</td>
+            <td class="center-align">2</td>
+            <td class="center-align">2B</td>
+            <td class="left-align">Gus Nanang SyaifuddiIn, S.Kom., M.Kom.</td>
         </tr>
         <tr>
-            <td>8</td>
-            <td>T122208</td>
-            <td>Praktik Desain & Pemrograman Web</td>
-            <td>2</td>
-            <td>28</td>
-            <td>Ardian Prima Atmaja, S. Kom, M.Cs.</td>
+            <td class="center-align">9</td>
+            <td class="center-align">TI22209</td>
+            <td class="left-align">Sistem Operasi</td>
+            <td class="center-align">2</td>
+            <td class="center-align">2B</td>
+            <td class="left-align">Muhammad Syaeful Fajar, S.Pd., M.Kom.</td>
         </tr>
         <tr>
-            <td>9</td>
-            <td>T122209</td>
-            <td>Sistem Operasi</td>
-            <td>2</td>
-            <td>2B</td>
-            <td>Hendrik Kusbandono, S. Kom, M.Kom</td>
+            <td class="center-align">10</td>
+            <td class="center-align">TI222010</td>
+            <td class="left-align">Praktik Sistem Operasi</td>
+            <td class="center-align">2</td>
+            <td class="center-align">2B</td>
+            <td  class="left-align">Muhammad Syaeful Fajar, S.Pd., M.Kom.</td>
         </tr>
         <tr>
-            <td>10</td>
-            <td>T122210</td>
-            <td>Praktik Sistem Operasi</td>
-            <td>2</td>
-            <td>28</td>
-            <td>Hendrik Kusbandono, S. Kom., M.Kom</td>
+            <td colspan="3" class="center-align">Jumlah</td>
+            <td class="center-align">20</td>
+            <td></td>
+            <td></td>
+        </table><br>
+    </table>
+    <table class="nama" style="margin-bottom: 100px;">
+        <tr>
+            <td style="width: 60%;"></td>
+            <td class="left-align">Madiun, 2 Februari 2024</td>
+        </tr>
+        <tr>
+            <td class="left-align">
+                Mahasiswa,
+            </td>
+            <td class="left-align">
+                Dosen Pembina Akademik,
+            </td>
         </tr>
     </table>
-
-    <p>Jumlah: 20</p>
-
-    <p>Mahasiswa,</p>
-    <p>Madiun
+    <table class="nama" style="margin-bottom: 100px;">
+            <tr>
+                <td class="left-align"><ins>Muhammad Daffa Samudra</ins></td>
+                <td style="width: 30%;"></td>
+                <td class="left-align"><ins>Tri Lestariningsih, S.Kom., M.Kom.</ins></td>
+            </tr>
+            <tr>
+                <td class="left-align">NIM. 233307054</td>
+                <td style="width: 30%;"></td>
+                <td class="left-align">NIDN. 0010128203</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
